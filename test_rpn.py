@@ -19,5 +19,5 @@ class TestBasics(unittest.TestCase):
 		with self.assertRaises(TypeError):
 			rpn.calculate("1 2 3 +")
 	def test_exponentiation(self):
-		result = rpn.exponentiation("2 4 ^")
-		self.assert(16, result)		
+		result = rpn.exponentiation("2 4 **")
+		self.assertEqual(16, result)		
