@@ -18,6 +18,6 @@ class TestBasics(unittest.TestCase):
 	def test_badstring(self):
 		with self.assertRaises(TypeError):
 			rpn.calculate("1 2 3 +")
-	def test_exponentiation(self):
-		result = rpn.exponentiation("2 4 **")
+	def test_exp(self):
+		result = rpn.calculate("2 4 **")
 		self.assertEqual(16, result)		
